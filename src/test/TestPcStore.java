@@ -21,7 +21,7 @@ public class TestPcStore{
         do {
 
             switch (opc) {
-                case 1 -> {
+                case 1: {
                     System.out.println("Ingresa nombre de computadora");
                     computerName = console.nextLine();
                     System.out.println("Ingresa tipo de raton");
@@ -43,13 +43,15 @@ public class TestPcStore{
                     Computer computer = new Computer(computerName, display, keyBoard, mouse);
                     order.addComputer(computer);
                 }
-                case 2 -> {
+                case 2: {
                     order.showOrder();
                 }
             }
             TestPcStore.menu();
             opc = consoleNumbers.nextInt();
         } while (opc != 0);
+        console.close();
+        consoleNumbers.close();
     }
 
     public static void menu() {
