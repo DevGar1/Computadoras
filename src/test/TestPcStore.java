@@ -22,19 +22,24 @@ public class TestPcStore{
 
             switch (opc) {
                 case 1: {
-                    System.out.println("Ingresa nombre de computadora");
+                    System.out.print("\033[H\033[2J");
+                    System.out.flush();
+                    System.out.println("\t\t\t**Bienvenido a nuestra tienda**\n");
+                    System.out.println("Nos da gusto tu visita. Por favor, ingresa" +
+                    " los datos de tu computadora soñada\n\n");
+                    System.out.println("Ingresa nombre de computadora:");
                     computerName = console.nextLine();
-                    System.out.println("Ingresa tipo de raton");
+                    System.out.println("Ingresa tipo de raton:");
                     mouseType = console.nextLine();
-                    System.out.println("Ingresa marca de raton");
+                    System.out.println("Ingresa marca de raton:");
                     mouseMark = console.nextLine();
-                    System.out.println("Ingresa tipo de teclado");
+                    System.out.println("Ingresa tipo de teclado:");
                     keyBoardType = console.nextLine();
-                    System.out.println("Ingresa marca de teclado");
+                    System.out.println("Ingresa marca de teclado:");
                     keyBoardMark = console.nextLine();
-                    System.out.println("Ingresa marca de monitor");
+                    System.out.println("Ingresa marca de monitor:");
                     displayMark = console.nextLine();
-                    System.out.println("Ingresa tamaño de monitor");
+                    System.out.println("Ingresa tamaño de monitor:");
                     size = consoleNumbers.nextDouble();
 
                     Mouse mouse = new Mouse(mouseType, mouseMark);
