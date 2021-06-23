@@ -4,3 +4,5 @@ Simulamos una tienda en la cual se va ingresando por consola la marca y caractar
 
 ### Aviso: 
 Todos los datos de tamaño deben ser colocados por número
+
+ ![github-large](portada.png)
